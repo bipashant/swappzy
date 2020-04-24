@@ -1,0 +1,125 @@
+*{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.AddNewListingButton_desktop{
+    color: #000 !important;
+}
+
+
+
+/* Super Dark background*/
+
+body, .wrapper, .left-navi a.selected{
+    background: #18181B !important;
+}
+
+/* Tool Background*/
+
+.home-toolbar-button-group-button:not(selected),
+.home-no-listings,
+.noUi-handle,
+.Topbar, .MenuItem, .ProfileDropdown__box__T_uM4{
+    background: #3A3A3D;
+}
+/* white font */
+
+body,
+.wrapper,
+.home-toolbar-button-group-button:not(selected),
+.home-no-listings,
+.noUi-handle,
+.home-categories-main,
+.Topbar, .Topbar a, .menu__label,
+.left-navi-link
+{
+    color: #fff !important;
+}
+
+.SearchBar__keywordInput__2HTav::placeholder,
+.SearchBar__keywordInput__2HTav:hover::placeholder,
+.SearchBar__keywordInput__2HTav:active::placeholder,
+.SearchBar__form__27PQI:hover,
+.SearchBar__keywordInput__2HTav,
+.SearchBar__form__27PQI:hover .SearchBar__locationInput__3g__8{
+    color: #fff !important;
+}
+
+.SearchBar__form__27PQI:hover,
+.SearchBar__keywordInput__2HTav,
+.SearchBar__form__27PQI:hover .SearchBar__locationInput__3g__8{
+    color: #fff !important;
+}
+
+
+
+
+/*Theme color as font color*/
+.home-categories-main.selected,
+.MenuItem__menuitemLink__2Eedg:focus, .MenuItem__menuitemLink__2Eedg:hover,
+.MenuPriority__priorityLink__moBbL:focus, .MenuPriority__priorityLink__moBbL:hover,
+.Menu__menu__1nYnK:focus .Menu__menuLabel__17fat,
+.Menu__menu__1nYnK.Menu__openMenu__3L78f .Menu__menuLabel__17fat,
+.Menu__menu__1nYnK.Menu__openOnHover__2oCiU:hover .Menu__menuLabel__17fat,
+.left-navi a.selected
+{
+    color: #04ffe1 !important;
+}
+
+/*Theme color as background color*/
+button{
+    background: #04ffe1;
+}
+
+/*Black font over button etc*/
+.home-toolbar-button-group-button.selected,
+button,
+button:hover, .button:hover, .big-button:hover,
+.inline-big-button:hover, .tribe-actions a:hover, .marketplace-lander button.action-button:hover,
+.home-toolbar-button-group-button:hover, .home-toolbar-show-filters-button:hover,
+.enabled-book-button:hover, .disabled-book-button:hover, .message-book-button:hover,
+.listing-shape-delete-button:hover, .button{
+    color: #3A3A3D !important;
+}
+
+/*Menu dropdown icon css*/
+.menu__label path,
+.ProfileDropdown__profileActions__34o4h path{
+    fill: #fff;
+}
+
+.Menu__menu__1nYnK:focus .Menu__menuLabelIcon__3gpCG g,
+.Menu__menu__1nYnK:focus .Menu__menuLabelDropdownIcon__1QkrJ path,
+.Menu__menu__1nYnK.Menu__openMenu__3L78f .Menu__menuLabelIcon__3gpCG g,
+.Menu__menu__1nYnK.Menu__openMenu__3L78f .Menu__menuLabelDropdownIcon__1QkrJ path,
+.Menu__menu__1nYnK.Menu__openOnHover__2oCiU:hover .Menu__menuLabelIcon__3gpCG g,
+.Menu__menu__1nYnK.Menu__openOnHover__2oCiU:hover .Menu__menuLabelDropdownIcon__1QkrJ path{
+    fill: #04ffe1;
+}
+
+#home_toolbar-select-share-type{
+    display: none;
+}
+
+.SearchBar__keywordInput__2HTav::placeholder,
+.SearchBar__keywordInput__2HTav::placeholder{
+    opacity: 1; /* Firefox */
+}
+
+
+
+.home-toolbar-button-group-button:nth-child(3){
+    display: none;
+}
+.home-toolbar-button-group-button:nth-child(2){
+    -moz-border-radius-topright: 0.375em;
+    -webkit-border-top-right-radius: 0.375em;
+    border-top-right-radius: 0.375em;
+    -moz-border-radius-bottomright: 0.375em;
+    -webkit-border-bottom-right-radius: 0.375em;
+    border-bottom-right-radius: 0.375em;
+}
+
+.ProfileDropdown__profileAction__1H9nm:hover{
+    background-color: #29292C;
+}
