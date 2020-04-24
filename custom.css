@@ -19,7 +19,10 @@ body, .wrapper, .left-navi a.selected{
 .home-toolbar-button-group-button:not(selected),
 .home-no-listings,
 .noUi-handle,
-.Topbar, .MenuItem, .ProfileDropdown__box__T_uM4{
+.Topbar, .MenuItem, .ProfileDropdown__box__T_uM4,
+.ajax-notice, .ajax-warning, .flash-notice, .flash-warning, .ajax-update-notice,
+.selected-group .select,
+.new-listing-form a.selected, .edit-listing-form a.selected{
     background: #3A3A3D;
 }
 /* white font */
@@ -31,7 +34,9 @@ body,
 .noUi-handle,
 .home-categories-main,
 .Topbar, .Topbar a, .menu__label,
-.left-navi-link
+.left-navi-link,
+.listing-price-amount,
+.listing-price-quantity
 {
     color: #fff !important;
 }
@@ -51,9 +56,6 @@ body,
     color: #fff !important;
 }
 
-
-
-
 /*Theme color as font color*/
 .home-categories-main.selected,
 .MenuItem__menuitemLink__2Eedg:focus, .MenuItem__menuitemLink__2Eedg:hover,
@@ -61,13 +63,15 @@ body,
 .Menu__menu__1nYnK:focus .Menu__menuLabel__17fat,
 .Menu__menu__1nYnK.Menu__openMenu__3L78f .Menu__menuLabel__17fat,
 .Menu__menu__1nYnK.Menu__openOnHover__2oCiU:hover .Menu__menuLabel__17fat,
-.left-navi a.selected
+.left-navi a.selected,
+.new-listing-form a.selected, .edit-listing-form a.selected
 {
     color: #04ffe1 !important;
 }
 
 /*Theme color as background color*/
-button{
+button, .new-listing-form a.select:hover, .edit-listing-form a.select:hover,
+.ProfileDropdown__profileAction__1H9nm:hover{
     background: #04ffe1;
 }
 
@@ -78,7 +82,10 @@ button:hover, .button:hover, .big-button:hover,
 .inline-big-button:hover, .tribe-actions a:hover, .marketplace-lander button.action-button:hover,
 .home-toolbar-button-group-button:hover, .home-toolbar-show-filters-button:hover,
 .enabled-book-button:hover, .disabled-book-button:hover, .message-book-button:hover,
-.listing-shape-delete-button:hover, .button{
+.listing-shape-delete-button:hover, .button,
+.new-listing-form a.select:hover, .edit-listing-form a.select:hover,
+.ProfileDropdown__profileAction__1H9nm:hover
+{
     color: #3A3A3D !important;
 }
 
@@ -118,8 +125,4 @@ button:hover, .button:hover, .big-button:hover,
     -moz-border-radius-bottomright: 0.375em;
     -webkit-border-bottom-right-radius: 0.375em;
     border-bottom-right-radius: 0.375em;
-}
-
-.ProfileDropdown__profileAction__1H9nm:hover{
-    background-color: #29292C;
 }
