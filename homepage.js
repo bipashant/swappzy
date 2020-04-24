@@ -5,7 +5,7 @@ $(document).ready(function () {
 
         var listingData = {};
         const request = new XMLHttpRequest();
-        request.open("GET", JSONBLOB_URL, true);
+        request.open("GET", JSONBLOB_URL, false);
         request.onreadystatechange = function () {
             if (request.responseText.length) {
                 listingData = JSON.parse(request.responseText);
