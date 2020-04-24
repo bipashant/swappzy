@@ -10,7 +10,10 @@
 
 /* Super Dark background*/
 
-body, .wrapper, .left-navi a.selected{
+body,
+.wrapper,
+.left-navi a.selected,
+.home-fluid-thumbnail-grid-author{
     background: #18181B !important;
 }
 
@@ -22,7 +25,8 @@ body, .wrapper, .left-navi a.selected{
 .Topbar, .MenuItem, .ProfileDropdown__box__T_uM4,
 .ajax-notice, .ajax-warning, .flash-notice, .flash-warning, .ajax-update-notice,
 .selected-group .select,
-.new-listing-form a.selected, .edit-listing-form a.selected{
+.new-listing-form a.selected, .edit-listing-form a.selected
+{
     background: #3A3A3D;
 }
 /* white font */
@@ -36,7 +40,9 @@ body,
 .Topbar, .Topbar a, .menu__label,
 .left-navi-link,
 .listing-price-amount,
-.listing-price-quantity
+.listing-price-quantity,
+.fluid-thumbnail-grid-image-title,
+.city-label
 {
     color: #fff !important;
 }
@@ -64,14 +70,17 @@ body,
 .Menu__menu__1nYnK.Menu__openMenu__3L78f .Menu__menuLabel__17fat,
 .Menu__menu__1nYnK.Menu__openOnHover__2oCiU:hover .Menu__menuLabel__17fat,
 .left-navi a.selected,
-.new-listing-form a.selected, .edit-listing-form a.selected
+.new-listing-form a.selected, .edit-listing-form a.selected,
+.price-text
 {
     color: #04ffe1 !important;
 }
 
 /*Theme color as background color*/
 button, .new-listing-form a.select:hover, .edit-listing-form a.select:hover,
-.ProfileDropdown__profileAction__1H9nm:hover{
+.ProfileDropdown__profileAction__1H9nm:hover,
+.listing-condition,
+.home-fluid-thumbnail-grid-narrow .prev:hover,.home-fluid-thumbnail-grid-narrow  .next:hover{
     background: #04ffe1;
 }
 
@@ -84,7 +93,9 @@ button:hover, .button:hover, .big-button:hover,
 .enabled-book-button:hover, .disabled-book-button:hover, .message-book-button:hover,
 .listing-shape-delete-button:hover, .button,
 .new-listing-form a.select:hover, .edit-listing-form a.select:hover,
-.ProfileDropdown__profileAction__1H9nm:hover
+.ProfileDropdown__profileAction__1H9nm:hover,
+.listing-condition,
+.home-fluid-thumbnail-grid-narrow .prev:hover,.home-fluid-thumbnail-grid-narrow  .next:hover
 {
     color: #3A3A3D !important;
 }
@@ -126,3 +137,191 @@ button:hover, .button:hover, .big-button:hover,
     -webkit-border-bottom-right-radius: 0.375em;
     border-bottom-right-radius: 0.375em;
 }
+
+
+
+.home-list-author-details, .home-fluid-thumbnail-grid-author-avatar-image{display: none;}
+
+.customized .home-list-avatar{
+    position: relative;
+    width: auto;
+}
+
+.home-list-avatar .city-label.icon-with-text-container .icon-part, .home-list-price-mobile .city-label.icon-with-text-container .icon-part{
+    top: 0.25em;
+    margin-right: 0;
+}
+
+.col-4 .listing-author{display: none;}
+
+body{font-family: "Proxima Nova Soft", Helvetica, sans !important;}
+
+.fluid-thumbnail-grid-image-overlay{
+    /*display: none;*/
+}
+
+
+.fluid-thumbnail-grid-image-price-container {
+    bottom: 0;
+    top: unset;
+    left: 0;
+    right: unset;
+    background: transparent;
+    text-align: left;
+    position: relative;
+    color: #757575;
+    float: left;
+    padding-left: 5px !important;
+}
+
+.home-fluid-thumbnail-grid-author-avatar-image{
+    display: none;
+}
+
+.fluid-thumbnail-grid-image-title{
+    position: relative;
+    display: block;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+    font-size: 15px;
+    max-height: 39px;
+    overflow: hidden;
+}
+.home-fluid-thumbnail-grid-author-name, .bubble-author, .bubble-avatar{
+    display: none;
+}
+
+.home-fluid-thumbnail-grid-author{
+    border-radius: 0;
+    border: none;
+    border-top: 0;
+    overflow: hidden;
+    height: 100px;
+}
+
+.info-container{
+    float: left;
+}
+
+.fluid-thumbnail-grid-image-image-container .fluid-thumbnail-grid-image-title,
+.fluid-thumbnail-grid-image-image-container .fluid-thumbnail-grid-image-price-container,
+.home-fluid-thumbnail-grid-author .home-fluid-thumbnail-grid-author-name{
+    visibility: hidden;
+}
+
+.customized .fluid-thumbnail-grid-image-title,
+.customized .fluid-thumbnail-grid-image-price-container,
+.customized .home-fluid-thumbnail-grid-author .home-fluid-thumbnail-grid-author-name{
+    visibility: visible !important;
+}
+
+.fluid-thumbnail-grid-image-image{
+    border-radius: 0;
+}
+
+
+.city-label.icon-with-text-container .icon-part {
+    position: absolute;
+    top: 0.45em;
+    font-weight: normal;
+}
+
+.city-label.icon-with-text-container{
+    font-weight: normal;
+}
+
+
+/* Slideshow container */
+.home-fluid-thumbnail-grid-narrow .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.home-fluid-thumbnail-grid-narrow .prev,.home-fluid-thumbnail-grid-narrow  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev {
+    border-radius: 0 5px 5px 0;
+}
+
+
+.hide{
+    display: none;
+}
+
+@media (min-width: 48em){
+    .home-list-author {
+        bottom: 2.5em;
+    }
+}
+
+#home_toolbar-select-share-type {
+    display: none;
+}
+
+.browsing-list-item-author-details{
+    display:  none;
+}
+.home-fluid-thumbnail-grid-details-author-name{
+    opacity: 0;
+}
+.home-fluid-thumbnail-grid-details-distance{
+    display: none;
+}
+
+.fluid-thumbnail-grid-image-price-container{
+    max-width: 100%;
+    width: auto;
+}
+.browsing-list-item-author-details .city-label.icon-with-text-container .icon-part{
+    top: .25em !important;
+}
+
+.bubble-details .bubble-price{
+    width: 100% !important;
+    float: left !important;
+    text-align: left !important;
+}
+.bubble-details{left: 0.45455em;}
+@media (min-width: 1025px){
+    .instagram-feeds-images.listings__listing{
+        margin: 26px;
+        margin-bottom: 24px;
+        width: 20%;
+    }
+}
+
+
+.listing-condition{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 15px;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+
